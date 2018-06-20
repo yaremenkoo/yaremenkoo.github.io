@@ -48,7 +48,7 @@ a:hover{transition: all 0.5s;}
 .anons h3 {font-size:  30px; font-weight: normal;margin: -10px 10px 10px; color: #800000;
     line-height: 15px; position: absolute; left: 690px ; top: 520px;}
 
-.anons b img {position: absolute; left: 370px; top:  470px;}   
+.anons b img {position: absolute; left: 300px; top:  492px;}   
 
 /*ff*/
 .footer span {margin: 0 20px;}
@@ -63,9 +63,8 @@ a:hover{transition: all 0.5s;}
         border-radius: 3px; box-shadow: 2px 2px 7px -1px #777; text-shadow: 0px 0px 3px #752300;}
     .afisha img{width: 50%;}
     .block {width: 48%;}
-    .anons img {width: 20%;}  
-    .anons {width: 10%;}  
-    .fon{width: 89%; margin: 0 auto;}
-    .anons h3 {font-size:20%;}
     
-}
+    .fon{width: 88%; margin: 0 auto;}
+    .anons b img { left: 200px; top:  500px;}
+    .anons h3 { left: 350px; top:  550px; width: 40%;}
+  }
