@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>latex</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+    <style>
+    h2 {text-align:center}
+    </style>
+  </head>
+  <body>
+    <div class="header"></div>
+    <h2 class="main">Логарифмічне диференціювання</h2>
+      <blockquote>
+        <h> У деяких випадках при знаходженні похідної доцільно задану функцію
+            спочатку прологарифмувати, а потім знайти похідну. </h>
+        <p>
+          Згадаемо формули: <br />
+          $$a = b \rightarrow \ln a = \ln b$$
+          $$\ln(a \cdot b) = \ln a +\ln b$$
+          $$\ln \frac{a}{b} = \ln a - \ln b$$
+          $$\ln a^n = n \cdot \ln a$$
+
+        </p>
+          
+
+          <h3>Приклади:</h3>
+          <p>
+            $$  a) y = x ^ { \sin x } $$
+            Ми маємо з таблиці похідних формули 
+            
+
+             $$ (U^ \alpha)^\prime = \alpha \cdot U ^ {\alpha - 1} \cdot U ^ \prime &emsp; i &emsp;(a ^ u)^\prime =  ( a ^ u \cdot \ln \alpha \cdot U ^ \prime),  $$
+
+            але вони нам не підходять. В нашому прикладі і основа і показник функції - змінні велечини. Ми повинні тільки логарифмувати функцію.
+
+            $$ \ln y = \ ln x ^ {sin x}  $$
+            $$ \ln y = \sin x \cdot \ln x $$
+            $$  (\ln y)' = (\sin x \cdot \ln x)'  $$
+            $$ \frac{1}{y} \cdot y' = (\sin x)' \ln x + \sin x \cdot (\ln x)'$$
+            $$ \frac{1}{y} \cdot y' = \cos x \cdot \ln x + \sin x \cdot \frac{1}{x} $$
+            $$ y' = (\cos x \cdot \ln x + \frac{\sin x}{x})\cdot y $$
+            $$ y' = (\cos x \cdot \ln x + \frac{\sin x}{x})\cdot x ^ {\sin x}  $$
+            <br />
+            $ b) y = \frac{x ^ 3 (x ^ 2 + 3) \cdot \sin x}{(x-4)\sqrt{3x+5}}$<br / >
+            Цю функцію можна диференціювати за правилом диференціювання частки, а потім
+            ( де потрібно) добутку, але цей спосіб дуже громіздкий.Застосуємо логарифмічне диференціювання.
+            $$ \ln y = \ln \frac{x^3(x^2 + 3) \cdot \sin x}{(x-4)\sqrt{3x+5}} $$ 
+            $$ \ln y = \ln x^3 + \ln (x ^2 + 3)+ \ln \sin x - \ln(x-4) - \ln \sqrt{3x+5}; $$
+            $$ \ln y = \ln x^3 + \ln (x ^2 + 3)+ \ln \sin x - \ln(x-4) - \frac{1}{2} \ln(3x +5); $$
+            $$ \frac{1}{y}y' = \frac{3}{x}+\frac{2x}{x^2 + 3}+ \frac {\cos x }{\sin x } - \frac {1}{x - 4} - \frac {1}{2} \frac{3}{3x + 5} $$
+
+            
+          </p>
+         
+    </blockquote>
+  </body>
+</html>
